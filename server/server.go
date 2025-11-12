@@ -29,10 +29,11 @@ func handleConnections(w http.ResponseWriter, r *http.Request) {
 		log.Println(err)
 	}
 
-	reader(ws)
+	clientAddr := r.RemoteAddr
+	reader(ws, clientAddr)
 }
 
-func reader(conn *websocket.Conn) {
+func reader(conn *websocket.Conn, addr string) {
 	for {
 		messageType, msg, err := conn.ReadMessage()
 		if err != nil {
@@ -40,7 +41,7 @@ func reader(conn *websocket.Conn) {
 			return
 		}
 
-		fmt.Printf("Received %s \n", msg)
+		fmt.Printf("Received %s from %s\n", msg, addr)
 
 		err = conn.WriteMessage(messageType, msg)
 		if err != nil {
