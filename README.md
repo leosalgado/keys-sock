@@ -1,4 +1,4 @@
-# Socket
+# Keys-sock
 
 [socket_demo.mp4](https://github.com/user-attachments/assets/a7699dd8-265a-4568-b2cd-29ed8b9032a8)
 
@@ -14,7 +14,7 @@ Requirements:
 Clone the repository: 
 
 ```sh
-git clone https://github.com/leosalgado/socket.git
+git clone https://github.com/leosalgado/keys-sock.git
 cd socket
 ```
 

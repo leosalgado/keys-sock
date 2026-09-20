@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/leosalgado/socket/client"
-	"github.com/leosalgado/socket/server"
+	"github.com/leosalgado/keys-sock/client"
+	"github.com/leosalgado/keys-sock/server"
 )
 
 func main() {

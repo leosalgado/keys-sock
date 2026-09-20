@@ -1,4 +1,4 @@
-module github.com/leosalgado/socket
+module github.com/leosalgado/keys-sock
 
 go 1.24.1
 
